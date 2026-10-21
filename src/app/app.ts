@@ -1,16 +1,14 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { BarraBusca } from './barra-busca/barra-busca';
-import { Topo } from './topo/topo';
 import { Rodape } from './rodape/rodape';
-import { Menu } from './menu/menu';
+import { Topo } from './topo/topo';
 
 @Component({
-  imports: [RouterOutlet, BarraBusca, Topo, Rodape, Menu],
   selector: 'app-root',
-  styleUrl: './app.css',
+  imports: [RouterOutlet, Rodape, Topo],
   templateUrl: './app.html',
+  styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('AtividadeWeb');
+  protected readonly title = signal('web05');
 }

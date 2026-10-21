@@ -3,11 +3,11 @@
   "version": 1,
   "cli": {
     "packageManager": "npm",
-    "analytics": "cec13b0b-33ed-4a64-8c2e-5e6558e3de28"
+    "analytics": "d8a55ceb-68b8-484c-bcfe-5d3f0cbf45db"
   },
   "newProjectRoot": "projects",
   "projects": {
-    "AtividadeWeb": {
+    "web05": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -65,10 +65,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "AtividadeWeb:build:production"
+              "buildTarget": "web05:build:production"
             },
             "development": {
-              "buildTarget": "AtividadeWeb:build:development"
+              "buildTarget": "web05:build:development"
             }
           },
           "defaultConfiguration": "development"

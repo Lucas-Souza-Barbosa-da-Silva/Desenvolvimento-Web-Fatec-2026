@@ -1,9 +1,26 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  imports: [],
+  imports: [CommonModule, FormsModule],
   selector: 'app-barra-busca',
   styleUrl: './barra-busca.css',
   templateUrl: './barra-busca.html',
 })
-export class BarraBusca {}
+export class BarraBusca {
+  busca: string = '';
+
+  ngOnInit(){
+    this.carregar();
+  }
+  
+  salvarBusca(): void{
+    localStorage.setItem('busca', this.busca);
+  }
+
+  carregar(): void{
+    this.busca = localStorage.getItem('busca') ?? '';
+  }
+
+}

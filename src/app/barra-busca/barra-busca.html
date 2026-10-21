@@ -1,1 +1,10 @@
-<p>barra-busca works!</p>
+<div class="row">
+<div class="col">
+    <input type="text" [(ngModel)]="busca"  name="txtBusca" placeholder="busca"
+class="form-control">{{busca}}</div>
+<div class="col">
+<button class="btn btn-warning" (click)="salvarBusca()">ok</button>
+</div>
+</div>
+<br>
+
